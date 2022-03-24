@@ -1,4 +1,5 @@
 /* import starts */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap'); */
 /* import ends */
 
 /* variables */
@@ -38,6 +39,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -63,6 +65,10 @@ table {
 	border-spacing: 0;
 }
 /* reset css ends==========================================*/
+
+section{
+	margin: 50px;
+}
 
 /* navigation starts======================================= */
 #nav-bar{
@@ -163,11 +169,7 @@ table {
 		padding: 10px 30px;
 		
 	}
-	.hero-footer{
-		top: 100vh;
-		left: 0;
-		flex-direction: column;
-	}
+	
 	#particles-js{		
 		height: 100vh;		
 	}
@@ -203,5 +205,10 @@ table {
 }
 .hero-footer .hero-footer-box p{
 	font-size: 0.7rem;
+}
+@media (max-width: 900px){
+	#particles-js .hero-footer{
+		display: none !important;
+	}
 }
 /* hero footer ends=========================== */
