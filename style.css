@@ -1,0 +1,154 @@
+/* import starts */
+/* import ends */
+
+/* variables */
+:root{
+    --color-white: hsl(252,30%, 100%);
+    --color-light: hsl(252,30%, 95%);
+    --color-gray: hsl(252,15%, 65%);
+    --color-primary: #0d6efd;;
+    --color-secondary: hsl(252,100%, 90%);
+    --color-success: hsl(120,95%, 65%);
+    --color-danger: hsl(0,95%, 65%);
+    --color-dark: hsl(252,30%, 17%);    
+    --color-black: hsl(252,30%, 10%);
+
+    }
+/* variables */
+
+
+/* reset css starts*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* reset css ends*/
+#nav-bar{
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	
+}
+#logo{
+	border: 2px solid ;
+	padding: 5px;
+}
+.nav-lnk{
+	text-decoration: none;
+	color: white;
+	font-weight: 500;
+	font-size: 0.8rem;
+	margin: 0 5px;
+	cursor:pointer;
+	
+}
+.nav-lnk:hover, #mybtn:hover{
+	color: rgb(138, 138, 138);
+}
+#navbtn{
+	display: none;
+}
+
+
+#particles-js{
+	height: 100vh;
+	background: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0,0.3)) ,url(/assets/images/Sunset+in+the+Caucasus+Mountains_07d94156ab5f4c768e266a1d7acfa03c.jpg), no-repeat;
+}
+#hero-txt{
+	margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	text-align: center;
+}
+#hero-hdr{
+	font-size: 4rem;
+}
+#mybtn{
+	text-decoration: none;
+	color: white;
+	padding: 10px 30px;
+	border: 1px solid var(--color-primary);
+	border-radius: 20px;
+	font-weight: 500;
+	
+}
+@media (max-width: 650px){
+	.nav-lnks{
+		display: none;
+	}
+	#navbtn{
+		display: block;
+		cursor: pointer;
+	}
+	.side-nav{
+		background: linear-gradient(rgba(0, 0, 0, 1),rgba(0,0,0,0.1));
+		display: flex;
+		flex-direction: column;
+		padding: 5px;
+		position: absolute;
+		right:0;
+		top: 100px;
+		border-radius: 5px 0 0 5px;
+		padding: 10px 0;
+		
+		
+	}
+	.side-nav::before{
+		content: "";
+		width: 20px;
+		height: 20px;
+		background: rgba(0, 0, 0, 1);
+		position: relative;
+		top: -20px;
+		left: 55%;
+		transform: rotate(45deg);
+	}
+	.side-nav a{
+		padding: 10px 30px;
+		
+	}
+}
