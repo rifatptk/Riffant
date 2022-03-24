@@ -62,13 +62,16 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/* reset css ends*/
+/* reset css ends==========================================*/
+
+/* navigation starts======================================= */
 #nav-bar{
 	color: white;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	position: fixed;
+	position: absolute;
+	z-index: 1;
 	
 }
 #logo{
@@ -90,10 +93,13 @@ table {
 #navbtn{
 	display: none;
 }
+/* navigation ends====================================== */
 
+/* hero area starts========================================= */
 
 #particles-js{
-	height: 100vh;
+	position: relative;
+	height: 130vh;
 	background: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0,0.3)) ,url(/assets/images/Sunset+in+the+Caucasus+Mountains_07d94156ab5f4c768e266a1d7acfa03c.jpg), no-repeat;
 }
 #hero-txt{
@@ -111,11 +117,14 @@ table {
 	text-decoration: none;
 	color: white;
 	padding: 10px 30px;
-	border: 1px solid var(--color-primary);
+	border: 3px solid var(--color-primary);
 	border-radius: 20px;
 	font-weight: 500;
 	
 }
+/* hero area ends========================================= */
+
+/* responsiv  starts============================ */
 @media (max-width: 650px){
 	.nav-lnks{
 		display: none;
@@ -123,15 +132,18 @@ table {
 	#navbtn{
 		display: block;
 		cursor: pointer;
+		position: fixed;
+		bottom: 25px;
+		right: 25px;
 	}
 	.side-nav{
-		background: linear-gradient(rgba(0, 0, 0, 1),rgba(0,0,0,0.1));
+		background: linear-gradient(rgba(0, 0, 0, 1),rgba(0,0,0,0.3));
 		display: flex;
 		flex-direction: column;
 		padding: 5px;
-		position: absolute;
+		position: fixed;
 		right:0;
-		top: 100px;
+		bottom: 75px;
 		border-radius: 5px 0 0 5px;
 		padding: 10px 0;
 		
@@ -141,14 +153,55 @@ table {
 		content: "";
 		width: 20px;
 		height: 20px;
-		background: rgba(0, 0, 0, 1);
+		background: rgba(0,0,0,0.3);
 		position: relative;
-		top: -20px;
-		left: 55%;
+		bottom: -294px;
+		left: 105px;
 		transform: rotate(45deg);
 	}
 	.side-nav a{
 		padding: 10px 30px;
 		
 	}
+	.hero-footer{
+		top: 100vh;
+		left: 0;
+		flex-direction: column;
+	}
+	#particles-js{		
+		height: 100vh;		
+	}
+
+
 }
+/* responsive ends============================== */
+
+/* hero footer starts============================ */
+
+.hero-footer{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+}
+.hero-footer .hero-footer-box{
+	padding: 20px;
+
+	
+	
+}
+.hero-footer .hero-footer-box:nth-child(odd){
+	background: rgba(0,0,0,0.9);
+}
+.hero-footer .hero-footer-box:nth-child(even){
+	background: rgba(0,0,25,0.8);
+}
+.hero-footer .hero-footer-box i{
+	font-size: 3rem;
+	padding-bottom: 8px;
+	
+}
+.hero-footer .hero-footer-box p{
+	font-size: 0.7rem;
+}
+/* hero footer ends=========================== */
