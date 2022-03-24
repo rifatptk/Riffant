@@ -106,7 +106,7 @@ section{
 #particles-js{
 	position: relative;
 	height: 130vh;
-	background: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0,0.3)) ,url(/assets/images/Sunset+in+the+Caucasus+Mountains_07d94156ab5f4c768e266a1d7acfa03c.jpg), no-repeat;
+	background: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0,0.3)) ,url(assets/images/Sunset+in+the+Caucasus+Mountains_07d94156ab5f4c768e266a1d7acfa03c.jpg), no-repeat;
 }
 #hero-txt{
 	margin: 0;
