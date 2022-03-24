@@ -67,7 +67,7 @@ table {
 /* reset css ends==========================================*/
 
 section{
-	margin: 50px;
+	margin: 50px 0;
 }
 
 /* navigation starts======================================= */
@@ -141,6 +141,7 @@ section{
 		position: fixed;
 		bottom: 25px;
 		right: 25px;
+		text-shadow: 0 0 2px black;
 	}
 	.side-nav{
 		background: linear-gradient(rgba(0, 0, 0, 1),rgba(0,0,0,0.3));
@@ -212,3 +213,15 @@ section{
 	}
 }
 /* hero footer ends=========================== */
+/* our services starts--------------------- */
+#our-services{
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(assets/images/XbrmJfY.webp);
+	color:white;
+	padding: 5rem;
+	text-align: center;
+}
+
+.our-services-card p{
+	font-size: 0.7rem;
+}
+/* our services ends--------------------- */
